@@ -1,0 +1,20 @@
+import sys
+
+tasksPerPerson = 0
+
+try:
+    tasks = 32
+    personStr = input("how many persons are there in the team? ")
+    persons = int(personStr)
+
+    tasksPerPerson = tasks / persons
+
+except ValueError as e:
+    print("Sorry - you need to enter an integer number:", e)
+
+except ZeroDivisionError as e:
+    print("Sorry - you need to enter value > 0:", e)
+except:
+    print("Something went wrong...", sys.exc_info())
+
+print("Every person should have around", tasksPerPerson, "tasks.")
