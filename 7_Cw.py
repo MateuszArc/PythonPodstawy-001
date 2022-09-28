@@ -1,0 +1,1 @@
+print("Serce 70-latka ma za sobą:", 70*72*60*24*365, "uderzeń.")
